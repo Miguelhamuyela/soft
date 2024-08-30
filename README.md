@@ -1,2 +1,1 @@
-# soft
-texte
+II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP

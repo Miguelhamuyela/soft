@@ -1,0 +1,157 @@
+    input,
+    select,
+    textarea {
+        height: 52px !important;
+        width: 100% !important;
+        background-color: rgba(147, 146, 150, 0.1) !important;
+        font-size: 14px !important;
+        font-style: italic !important;
+        font-weight: 500 !important;
+        margin-bottom: 15px !important;
+        border-radius: 0 !important;
+        border: none !important;
+        border-bottom: 2px solid #2E5185 !important;
+    }
+    
+    input:hover,
+    select:hover,
+    textarea:hover {
+        border-bottom: 4px solid #2E5185 !important;
+    }
+    
+    input::placeholder,
+    select::placeholder,
+    textarea::placeholder {
+        font-size: 12px !important;
+        color: rgb(147, 146, 150) !important;
+    }
+
+
+
+
+      @media (max-width:  280px) {
+        .carousel-item .carousel-caption #title{
+            font-size:23px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        .carousel-item .carousel-caption #img-slide{
+           
+            width: 100% !important;
+        }
+
+        .carousel-item .carousel-caption #btn-slide{
+           justify-content: center;
+           
+        }
+
+    
+        
+      }      
+     
+
+      @media (max-width: 375px) {
+        .carousel-item .carousel-caption #title{
+            font-size:30px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        .carousel-item .carousel-caption #img-slide{
+            width: 100% !important;
+        }
+        
+      }
+
+
+      @media (max-width: 414px) {
+        .carousel-item .carousel-caption #title{
+            font-size:30px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        .carousel-item .carousel-caption #img-slide{
+            width: 100% !important;
+        }
+        
+      }
+
+      @media (max-width:  540px) {
+        .carousel-item .carousel-caption #title{
+            font-size:30px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        .carousel-item .carousel-caption #img-slide{
+            width: 100% !important;
+        }
+        
+      }
+
+
+
+
+      @media (max-width: 414px) {
+        .carousel-item .carousel-caption #title{
+            font-size:30px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        
+      }
+
+      @media (max-width: 360px) {
+        .carousel-item .carousel-caption #title{
+            font-size:30px !important;
+        }
+        .carousel-item .carousel-caption #description{
+            font-size: 22px !important;
+        }
+
+        .carousel-item .carousel-caption #img-slide{
+            width: 100% !important;
+        }
+        
+      }
+
+    
+
+    
+    #borderDivDiv {
+        border-radius: 5px;
+    }
+
+    .countdown {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+      }
+      
+      .countdown li {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+        padding: 1rem;
+        color: rgb(249, 250, 250);
+        background: #1e1e1e;
+        border-radius: 4px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+
+      .countdown li span {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 3rem;
+      }
+   
