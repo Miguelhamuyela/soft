@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>CPLP - @yield('titulo')</title>
 
-    
+
      {{--Protecção contra clickJacking--}}
      {!! header('X-Frame-Options: SAMEORIGIN') !!}
      
