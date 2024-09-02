@@ -1,6 +1,9 @@
 @extends('layouts.merge.site')
 @section('titulo', 'Oficial')
 @section('content')
+
+
+
     <main>
         <section>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -118,8 +121,8 @@
         </section>
             
             --}}
-        
 
+        {{--
         <section class="bg-light py-6 py-lg-7 text-dark">
             <div class=container>
                 <div class=row>
@@ -147,7 +150,7 @@
                 </div>
             </div>
         </section>
-
+ --}}
         @include('extra._countdown.index')
 
 
@@ -183,7 +186,8 @@
             </div>
         </section>
 
-        <section class="py-6 py-lg-7 bg-light">
+{{-- 
+        {{-- <section class="py-6 py-lg-7 bg-light">
             <div class=container>
                 <div class=row>
                     <div class="col my-5">
@@ -227,7 +231,18 @@
                     <div class="swiper-btn swiper-btn-next ml-3" tabindex=0 role=button aria-label="Next slide"></div>
                 </div>
             </div>
-        </section>
+        </section> --}}
+
+
+
+
+
+
+
+        {{-- 
+
+
+
 
         <section class="py-6 py-lg-7">
             <div class=container>
@@ -258,6 +273,17 @@
             </div>
         </section>
 
+
+
+   -- }}
+
+
+
+
+
+   {{--
+
+
         <section class="py-6 py-lg-7 mt-6 mt-lg-7 bg-light">
             <div class=container>
 
@@ -272,7 +298,7 @@
                     <div class=col-md-3>
                         <p class="mb-5 mb-md-0"><span class=display-4 data-countup data-from=9
                                 data-to=data-options='{"suffix": "+"}'>9</span><br><span
-                                class="d-block text-muted mt-n1">Países </span></p>
+                                class="d-block text-muted mt-n1">PaísesWQEWQEWQEWQ </span></p>
                     </div>
 
                     <div class=col-md-3>
@@ -294,8 +320,9 @@
             </div>
         </section>
 
+ --}}
         @include('extra._members.index')
-        <section class="py-13 py-lg-15">
+        {{--  <section class="py-13 py-lg-15">
             <div class="bg-primary bg-image bg-position-bottom-center bg-cover overlay overlay-primary overlay-60"
                 style="background-image: url(/site/images/footer-3.jpg);">
                 <div class="container h-100">
@@ -326,9 +353,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </section> --}}
 
+    </main>
+ 
 @endsection
 @section('CSSJS')
     <link rel="stylesheet" href="/site/css/card-slide.css">

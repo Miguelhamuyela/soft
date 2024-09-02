@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'II Reunião Interministerial da Governação Electrónica &  XI Reunião de Ministros das Comunicações da CPLP')
+@section('titulo', '')
 @section('content')
 
 

@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
+
+
+
+
+
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="utf-8">
-    <title>CPLP - @yield('titulo')</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+<title>BizTech - HTML 5 Template Preview</title>
 
-     {{--Protecção contra clickJacking--}}
-     {!! header('X-Frame-Options: SAMEORIGIN') !!}
-     
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP">
-    <meta name="keywords" content="II Reunião Interministerial da Governação Electrónica CPLP, XI Reunião de Ministros das Comunicações da CPLP, CPLP, TICS, GOVERNAÇÃO ELECTRONICA">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fav Icon -->
+<link rel="icon" href="site/images/favicon.ico" type="image/x-icon">
 
-    <meta property="og:title" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:site_name" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:description" content="II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP" />
-    <meta property="og:type" content="article" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Google Fonts -->
+<link href="../../fonts.googleapis.com/css2eeaf.css?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="../../fonts.googleapis.com/css2c474.css?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
-    <!-- Fav and touch icons -->
-    <link href="/site/images/favicon.png" rel="shortcut icon" />
-    <script>
-        console.log(window.innerWidthw);
-        if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-            document.getElementById("mobil").style.visibility = "visible";
-            document.getElementById("desktop").style.visibility = "hidden";
-        }
-           else
-           document.getElementById("mobil").style.visibility = "hidden";
-           document.getElementById("desktop").style.visibility = "visible";
-    </script>
-    {{-- sweetalert --}}
+<!-- Stylesheets -->
+<link href="site/css/font-awesome-all.css" rel="stylesheet">
+<link href="site/css/flaticon.css" rel="stylesheet">
+<link href="site/css/owl.css" rel="stylesheet">
+<link href="site/css/bootstrap.css" rel="stylesheet">
+<link href="site/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="site/css/animate.css" rel="stylesheet">
+<link href="site/css/nice-select.css" rel="stylesheet">
+<link href="site/css/color.css" rel="stylesheet">
+<link href="site/css/elpath.css" rel="stylesheet">
+<link href="site/css/style.css" rel="stylesheet">
+<link href="site/css/elements-css/banner.css" rel="stylesheet">
+<link href="site/css/elements-css/feature.css" rel="stylesheet">
+<link href="site/css/elements-css/about.css" rel="stylesheet">
+<link href="site/css/elements-css/service.css" rel="stylesheet">
+<link href="site/css/elements-css/chooseus.css" rel="stylesheet">
+<link href="site/css/elements-css/projects.css" rel="stylesheet">
+<link href="site/css/elements-css/testimonial.css" rel="stylesheet">
+<link href="site/css/elements-css/working-process.css" rel="stylesheet">
+<link href="site/css/elements-css/funfact.css" rel="stylesheet">
+<link href="site/css/elements-css/expertise.css" rel="stylesheet">
+<link href="site/css/elements-css/news.css" rel="stylesheet">
+<link href="site/css/responsive.css" rel="stylesheet">
+
+ {{-- sweetalert --}}
     <link rel="stylesheet" href="/css/sweetalert2.css">
     <script src="/js/sweetalert2.all.min.js"></script>
 
 
-    <!-- ===== All CSS files ===== -->
-    <link rel=manifest href="/site/images/icons/favicons/site.webmanifest">
-    <link rel=mask-icon href="/site/images/icons/favicons/safari-pinned-tab.svg" color=#232323>
-    <meta name=msapplication-TileColor content=#ffffff>
-    <meta name=theme-color content=#ffffff>
-    <link href="/site/css/theme.min.css" rel=stylesheet>
-    <link href="/site/css/style.css" rel=stylesheet>
-
-    {!! RecaptchaV3::initJs() !!}
-
-    @yield('CSSJS')
-
-
 </head>
+
+
+
+
+
+
 
 <body>
    

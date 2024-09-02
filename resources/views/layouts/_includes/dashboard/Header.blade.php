@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/logotipo/icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="site/images/logotipo/icon.png">
 
     <link href="/site/images/favicon.png" sizes="16x16" rel="shortcut icon" />
     <link href="/site/images/favicon.png" sizes="32x32" rel="shortcut icon" />
