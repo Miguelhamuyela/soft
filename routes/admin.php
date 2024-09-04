@@ -205,6 +205,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/imageGalleryHotel/delete/{id}', ['as' => 'admin.imagehostelList.delete', 'uses' => 'Admin\ImageHotelController@destroy']);
     /* End imagehostelList */
 
+ 
     /* news */
     Route::get('admin/news/index', ['as' => 'admin.news.index', 'uses' => 'Admin\NewsController@list']);
     Route::get('admin/news/show/{id}', ['as' => 'admin.news.show', 'uses' => 'Admin\NewsController@show']);
@@ -214,6 +215,9 @@ Route::middleware(['auth'])->group(function () {
     Route::put('admin/news/update/{id}', ['as' => 'admin.news.update', 'uses' => 'Admin\NewsController@update']);
     Route::get('admin/news/delete/{id}', ['as' => 'admin.news.delete', 'uses' => 'Admin\NewsController@destroy']);
     /* end news */
+  
+    
+
 
   });
 });

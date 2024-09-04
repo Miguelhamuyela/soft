@@ -66,13 +66,13 @@
                     </li>
                 </ul>
 
-               
+
 
                 {{-- Menu de Inscrições --}}
                 <p class="text-muted nav-heading mt-2 mb-1">
                     <span> Inscrições</span>
                 </p>
-                
+
                 <ul class="navbar-nav flex-fill w-100 mb-2">
                     <li class="nav-item w-100">
                         <a class="nav-link" href="{{ route('admin.signup.index') }}">
@@ -122,8 +122,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#doc" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle nav-link">
+                        <a href="#doc" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                             <i class="fe fe-file-text fe-16"></i>
                             <span class="ml-3 item-text">Documentos</span>
                         </a>
@@ -142,29 +141,30 @@
                         </ul>
                     </li>
 
-                     {{-- Menu de Transportes --}}
-                <p class="text-muted nav-heading mt-4 mb-1">
-                    <span>Transportes</span>
-                </p>
-                <li class="nav-item dropdown">
-                    <a href="#car" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
-                        <i class="fe fe-users fe-16"></i>
-                        <span class="ml-3 item-text">Transportes </span>
-                    </a>
-                    <ul class="collapse list-unstyled pl-4 w-100" id="car">
+                    {{-- Menu de Transportes --}}
+                    <p class="text-muted nav-heading mt-4 mb-1">
+                        <span>Transportes</span>
+                    </p>
+                    <li class="nav-item dropdown">
+                        <a href="#car" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav-link">
+                            <i class="fe fe-users fe-16"></i>
+                            <span class="ml-3 item-text">Transportes </span>
+                        </a>
+                        <ul class="collapse list-unstyled pl-4 w-100" id="car">
 
-                        <li class="nav-item">
-                            <a class="nav-link pl-3" href="{{ route('admin.laceCar.create') }}">
-                                <span class="ml-1 item-text">Cadastrar</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link pl-3" href="{{ route('admin.laceCar.index') }}">
-                                <span class="ml-1 item-text">Listar</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="{{ route('admin.laceCar.create') }}">
+                                    <span class="ml-1 item-text">Cadastrar</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3" href="{{ route('admin.laceCar.index') }}">
+                                    <span class="ml-1 item-text">Listar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     {{-- Menu de Programas & Actividades --}}
                     <p class="text-muted nav-heading mt-4 mb-1">
                         <span> Programas & Actividades </span>

@@ -1,6 +1,5 @@
  <div class="boxed_wrapper">
 
-
      <!-- preloader -->
      <div class="loader-wrap">
          <div class="preloader">
@@ -108,7 +107,7 @@
                                  <ul class="navigation clearfix">
                                      <li class="current dropdown"><a href="index.html">Home</a>
                                          <ul>
-                                             <li><a href="index.html">Home Page 01</a></li>
+                                             <li><a href="{{ route('site.home') }}">Home Page 01SADSAD</a></li>
                                              <li><a href="index-2.html">Home Page 02</a></li>
                                              <li><a href="index-3.html">Home Page 03</a></li>
                                              <li><a href="index-onepage.html">OnePage Home</a></li>
@@ -122,9 +121,9 @@
                                              </li>
                                          </ul>
                                      </li>
-                                     <li class="dropdown"><a href="index.html">Services</a>
+                                     <li class="dropdown"><a href="#">Services</a>
                                          <ul>
-                                             <li><a href="services.html">Our Services 1</a></li>
+                                             <li><a href="{{ route('site.news') }}">Our Services 1qwrer</a></li>
                                              <li><a href="services-2.html">Our Services 2</a></li>
                                              <li><a href="service-details.html">Tax Management</a></li>
                                              <li><a href="service-details-2.html">Strategy & Planning</a></li>
@@ -820,8 +819,8 @@
                          </div>
                      </div>
                  </div>
-                 
-                 
+
+
                  <div class="project-block-one">
                      <div class="inner-box">
                          <figure class="image-box"><img src="site/images/project/project-2.jpg" alt="">

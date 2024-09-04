@@ -1,10 +1,10 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Criar Conta no portal da II Reunião Interministerial da Governação Electrónica & XI Reunião de Ministros das Comunicações da CPLP')
+@section('titulo', 'Criar Conta no portal do soft')
 @section('content')
 
     <div class="card shadow">
         <div class="card-body">
-            <h2 class="my-5 text-center">Criar conta no Portal da <br> II Reunião Interministerial da Governação Electrónica & <br> XI Reunião de Ministros das Comunicações da CPLP</h2>
+            <h2 class="my-5 text-center">Criar conta no Portal da <br>  & <br> SOFT</h2>
 
             <!-- Validation Errors -->
             <x-auth-validation-errors class="mb-4 alert alert-danger" :errors="$errors" />

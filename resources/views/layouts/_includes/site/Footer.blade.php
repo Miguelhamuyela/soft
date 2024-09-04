@@ -1,13 +1,6 @@
 @include('extra._culture.index')
 
 
-
-
-
-
-
-
-
 <!-- main-footer -->
 <footer class="main-footer">
     <div class="widget-section">
