@@ -205,7 +205,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/imageGalleryHotel/delete/{id}', ['as' => 'admin.imagehostelList.delete', 'uses' => 'Admin\ImageHotelController@destroy']);
     /* End imagehostelList */
 
- 
+
     /* news */
     Route::get('admin/news/index', ['as' => 'admin.news.index', 'uses' => 'Admin\NewsController@list']);
     Route::get('admin/news/show/{id}', ['as' => 'admin.news.show', 'uses' => 'Admin\NewsController@show']);
@@ -215,9 +215,16 @@ Route::middleware(['auth'])->group(function () {
     Route::put('admin/news/update/{id}', ['as' => 'admin.news.update', 'uses' => 'Admin\NewsController@update']);
     Route::get('admin/news/delete/{id}', ['as' => 'admin.news.delete', 'uses' => 'Admin\NewsController@destroy']);
     /* end news */
-  
-    
 
+    /* services */
+    Route::get('admin/services/index', ['as' => 'admin.services.index', 'uses' => 'Admin\ServiceController@index']);
+    Route::get('admin/services/show/{id}', ['as' => 'admin.services.show', 'uses' => 'Admin\ServiceController@show']);
+    Route::get('admin/services/create', ['as' => 'admin.services.create', 'uses' => 'Admin\ServiceController@create']);
+    Route::post('admin/services/store', ['as' => 'admin.services.store', 'uses' => 'Admin\ServiceController@store']);
+    Route::get('admin/services/edit/{id}', ['as' => 'admin.services.edit', 'uses' => 'Admin\ServiceController@edit']);
+    Route::put('admin/services/update/{id}', ['as' => 'admin.services.update', 'uses' => 'Admin\ServiceController@update']);
+    Route::get('admin/services/delete/{id}', ['as' => 'admin.services.delete', 'uses' => 'Admin\ServiceController@destroy']);
+    /* end services */
 
   });
 });

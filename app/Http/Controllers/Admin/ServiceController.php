@@ -4,12 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Classes\Logger;
 use App\Http\Controllers\Controller;
-use App\Models\LaceCar;
+use App\Models\Servece;
 use Illuminate\Http\Request;
 
-class LaceCarController extends Controller
+class ServiceController extends Controller
 {
-
     private $Logger;
 
     public function __construct()
@@ -20,9 +19,9 @@ class LaceCarController extends Controller
     
     public function index()
     {
-        $response['laceCars'] = LaceCar::get();
+        $response['services'] = Servece::get();
         $this->Logger->log('info', 'Listou  reda-car');
-        return view('admin.laceCar.list.index', $response);
+        return view('admin.service.list.index', $response);
     }
 
     /**
@@ -32,10 +31,9 @@ class LaceCarController extends Controller
      */
     public function create()
     {
-        $this->Logger->log('info', 'Entrou em cadastrar  reda-car');
-        return view('admin.laceCar.create.index');
+       $this->Logger->log('info', 'Entrou em cadastrar  reda-car');
+        return view('admin.service.create.index');
     }
-
 
     /**
      * Store a newly created resource in storage.
@@ -45,23 +43,23 @@ class LaceCarController extends Controller
      */
     public function store(Request $request)
     {
-        $validation = $request->validate([
+       $validation = $request->validate([
             'name' => 'required',
             'description' => 'required',
             'photo' => 'required|mimes:jpg,png,gif',
         ]);
-        $file = $request->file('photo')->store('lace_cars');
+        $file = $request->file('photo')->store('services');
 
 
-        $laceCar = LaceCar::create([
+        $services = Servece::create([
             'name' => $request->name,
             'description' => $request->description,
             'photo' => $file,
 
         ]);
-        $this->Logger->log('info', 'Cadastrou um Hospital com o nome ' . $laceCar->name);
+        $this->Logger->log('info', 'Cadastrou um Hospital com o nome ' . $services->name);
 
-        return redirect("admin/reda-car/show/$laceCar->id")->with('create', '1');
+        return redirect("admin/services/show/$services->id")->with('create', '1');
     }
 
     /**
@@ -72,10 +70,9 @@ class LaceCarController extends Controller
      */
     public function show($id)
     {
-
-        $response['laceCar'] = LaceCar::find($id);
+         $response['services'] = Servece::find($id);
         $this->Logger->log('info', 'Visualizou um Hospital com o identificador ' . $id);
-        return view('admin.laceCar.details.index', $response);
+        return view('admin.service.details.index', $response);
     }
 
     /**
@@ -86,9 +83,7 @@ class LaceCarController extends Controller
      */
     public function edit($id)
     {
-        $response['laceCar'] = LaceCar::find($id);
-        $this->Logger->log('info', 'Entrou em editar um Hospital com o identificador ' . $id);
-        return view('admin.laceCar.edit.index', $response);
+        //
     }
 
     /**
@@ -100,26 +95,7 @@ class LaceCarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validation = $request->validate([
-            'name' => 'required',
-            'description' => 'required',
-            'photo' => 'mimes:jpg,png,gif',
-        ]);
-        if ($file = $request->file('photo')) {
-            $file = $file->store('lace_cars');
-        } else {
-            $file = LaceCar::find($id)->photo;
-        }
-
-        LaceCar::find($id)->update([
-
-            'name' => $request->name,
-            'description' => $request->description,
-            'photo' => $file,
-        ]);
-
-        $this->Logger->log('info', 'Editou  um Hospital com o identificador ' . $id);
-        return redirect("admin/reda-car/show/$id")->with('edit', '1');
+        //
     }
 
     /**
@@ -130,9 +106,6 @@ class LaceCarController extends Controller
      */
     public function destroy($id)
     {
-        $this->Logger->log('info', 'Eliminou uma reda-car com o identificador ' . $id);
-        LaceCar::find($id)->delete();
-
-        return redirect()->back()->with('destroy', '1');
+        //
     }
 }

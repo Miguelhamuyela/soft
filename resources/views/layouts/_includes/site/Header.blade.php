@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-
-
-
-
-
-
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,6 +38,7 @@
 <link href="site/css/elements-css/expertise.css" rel="stylesheet">
 <link href="site/css/elements-css/news.css" rel="stylesheet">
 <link href="site/css/responsive.css" rel="stylesheet">
+
 
  {{-- sweetalert --}}
     <link rel="stylesheet" href="/css/sweetalert2.css">

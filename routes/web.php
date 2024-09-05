@@ -57,6 +57,9 @@ Route::get('/Lista-de-Restaurantes/{name}', ['as' => 'site.listRestaurants.show'
 Route::get('/Lista-de-transportes', ['as' => 'site.laceCar', 'uses' => 'Site\LaceCarController@index']);
 Route::get('/Lista-de-transportes/{name}', ['as' => 'site.laceCar.show', 'uses' => 'Site\LaceCarController@show']);
 
+/**renda car */
+Route::get('/services', ['as' => 'site.services', 'uses' => 'Site\ServiceController@index']);
+Route::get('/serveces/{name}', ['as' => 'site.services.show', 'uses' => 'Site\ServiceController@show']);
 
 /* docs */
 Route::get('/documentos', ['as' => 'site.docs', 'uses' => 'Site\DocController@index']);
