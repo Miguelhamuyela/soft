@@ -123,7 +123,7 @@
                                      </li>
                                      <li class="dropdown"><a href="#">Services</a>
                                          <ul>
-                                             <li><a href="{{ route('site.news') }}">Our Services 1qwrer</a></li>
+                                             <li><a href="{{ route('site.about') }}">Our Services 1qwrer</a></li>
                                              <li><a href="services-2.html">Our Services 2</a></li>
                                              <li><a href="service-details.html">Tax Management</a></li>
                                              <li><a href="service-details-2.html">Strategy & Planning</a></li>

@@ -1,11 +1,11 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Cadastrar Projecto')
+@section('titulo', 'Cadastrar Projecto Social')
 
 @section('content')
     <div class="card mb-2">
         <div class="card-body">
             <h2 class="h5 page-title">
-                Cadastrar Serviço ou Acção Social
+                Cadastrar Projecto Social
             </h2>
         </div>
     </div>

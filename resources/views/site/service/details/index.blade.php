@@ -1,5 +1,5 @@
 @extends('layouts.merge.site')
-@section('titulo', 'Detalhes de Transportes')
+@section('titulo', 'Detalhes de Projecto Social')
 @section('content')
 
 <main>

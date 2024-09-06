@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Editar Transportes')
+@section('titulo', 'Editar Projecto Social')
 
 @section('content')
     <div class="card mb-2">

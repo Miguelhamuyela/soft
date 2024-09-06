@@ -58,7 +58,7 @@ class ServiceController extends Controller
 
         ]);
         $this->Logger->log('info', 'Cadastrou um Hospital com o nome ' . $services->name);
-
+        
         return redirect("admin/services/show/$services->id")->with('create', '1');
     }
 
@@ -71,7 +71,7 @@ class ServiceController extends Controller
     public function show($id)
     {
          $response['services'] = Servece::find($id);
-        $this->Logger->log('info', 'Visualizou um Hospital com o identificador ' . $id);
+        $this->Logger->log('info', 'Visualizou um Projecto com o identificador ' . $id);
         return view('admin.service.details.index', $response);
     }
 
@@ -83,7 +83,9 @@ class ServiceController extends Controller
      */
     public function edit($id)
     {
-        //
+       $response['services'] = Servece::find($id);
+        $this->Logger->log('info', 'Entrou em editar um Projecto com o identificador ' . $id);
+        return view('admin.service.edit.index', $response);
     }
 
     /**
@@ -95,7 +97,26 @@ class ServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validation = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+            'photo' => 'mimes:jpg,png,gif',
+        ]);
+        if ($file = $request->file('photo')) {
+            $file = $file->store('services');
+        } else {
+            $file = Servece::find($id)->photo;
+        }
+
+        Servece::find($id)->update([
+
+            'name' => $request->name,
+            'description' => $request->description,
+            'photo' => $file,
+        ]);
+
+        $this->Logger->log('info', 'Editou  um Projecto com o identificador ' . $id);
+        return redirect("admin/services/show/$id")->with('edit', '1');
     }
 
     /**
@@ -106,6 +127,9 @@ class ServiceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->Logger->log('info', 'Eliminou um Projecto com o identificador ' . $id);
+        Servece::find($id)->delete();
+
+        return redirect()->back()->with('destroy', '1');
     }
 }

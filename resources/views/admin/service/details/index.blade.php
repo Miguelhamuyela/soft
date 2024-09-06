@@ -1,5 +1,5 @@
 @extends('layouts.merge.dashboard')
-@section('titulo', 'Detalhes de Transportes')
+@section('titulo', 'Detalhes do Projecto Social')
 
 @section('content')
 
@@ -8,7 +8,7 @@
 <div class="card mb-2">
     <div class="card-body">
         <h2 class="h5 page-title">
-            <a href="{{ route('admin.services.index') }}"><u>Listar  Transportes</u></a> > {{ $laceCar->name }}
+            <a href="{{ route('admin.services.index') }}"><u>Listar os Projecto</u></a> > {{ $services->name }}
         </h2>
     </div>
 </div>

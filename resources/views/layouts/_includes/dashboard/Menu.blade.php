@@ -98,9 +98,7 @@
                             </a>
                         </li>
 
-
                     </ul>
-
 
                     <p class="text-muted nav-heading mt-4 mb-1">
                         <span>Acção Social</span>
@@ -109,7 +107,7 @@
                         <a href="#car" data-toggle="collapse" aria-expanded="false"
                             class="dropdown-toggle nav-link">
                             <i class="fe fe-users fe-16"></i>
-                            <span class="ml-3 item-text">Acção Social</span>
+                            <span class="ml-3 item-text">Projecto</span>
                         </a>
                         <ul class="collapse list-unstyled pl-4 w-100" id="car">
 

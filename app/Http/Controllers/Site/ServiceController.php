@@ -15,7 +15,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        $response['services']= Servece::get();
+       $response['services']= Servece::get();
        return view('site.service.list.index',$response);
     }
 
@@ -48,7 +48,9 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-        
+        $response['services'] = Servece::where('name', urldecode($title))->first();
+
+        return view('site.service.details.index', $response);
     }
 
     /**
